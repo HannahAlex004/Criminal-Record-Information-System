@@ -9,10 +9,11 @@ import matplotlib.dates as mdates
 # Database connection configuration
 db_config = {
     'host': 'localhost',
-    'user': 'root',
-    'password': '23042004Ex-',  # Replace with your database password
+    'user': 'your_mysql_username',
+    'password': 'your_mysql_password',
     'database': 'criminal_record_db'
 }
+
 
 # Database connection function
 def connect_to_db():
