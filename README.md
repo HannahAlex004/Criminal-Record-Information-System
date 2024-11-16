@@ -37,7 +37,7 @@ This is a **Criminal Record Management System** built using Python with a Tkinte
 
 ### Steps
 1. Clone the repository:
-   git clone <repository_url>
+   git clone https://github.com/HannahAlex004/Criminal-Record-Information-System.git
    cd criminal_record_management_system
 2. Install the required Python packages:
    pip install mysql-connector-python matplotlib
@@ -53,7 +53,7 @@ This is a **Criminal Record Management System** built using Python with a Tkinte
   Import the database schema (e.g., schema.sql) to create the necessary tables:
   mysql -u root -p criminal_record_db < schema.sql
 5. Run the application:
-  python <main_script_name>.py
+  python codes.py
 
 ## Database Design
 ### Tables
@@ -89,6 +89,4 @@ Implement REST APIs for external integrations.
 Improve UI/UX for better usability.
 Can be extended to include detailed tables for victims and accused.
 
-
-Make sure to replace placeholders like <repository_url>, schema.sql, <main_script_name>.py, and your contact details with actual values.
 
