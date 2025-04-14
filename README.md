@@ -1,60 +1,71 @@
-# Criminal Record Management System
+# 🔐 Criminal Record Management System
 
-This is a **Criminal Record Management System** built using Python with a Tkinter GUI and MySQL for database management. The system supports multiple user roles (Police and Victim) and provides various functionalities such as managing cases, handling complaints, visualizing data, and maintaining an audit trail for case updates.
-
-
-## Features
-
-### 1. **User Authentication**
-- Role-based access control (Police and Victim).
-- Login system with username and password validation.
-
-### 2. **Police Dashboard**
-- Manage cases: Add, update, and view case statuses.
-- Handle complaints: Add new complaints, view complaints, and update their status.
-- Visualize case statuses using bar graphs.
-- View related cases and complaints (unresolved ones).
-
-### 3. **Victim Dashboard**
-- Victims can view their own cases and complaints.
-
-### 4. **Database Operations**
-- Nested joins and aggregation queries for related cases and complaints.
-- Audit trail using MySQL triggers for case status changes.
-- Stored procedure to add complaints.
+A **Criminal Record Management System** built using **Python (Tkinter)** for the GUI and **MySQL** for database management. It supports **role-based access control** (Police and Victim) and offers functionalities like case management, complaint handling, data visualization, and audit trails through triggers.
 
 ---
 
-## Installation
+## 🚀 Features
+
+### 👥 User Authentication
+- Secure login system with username and password validation
+- Role-based access: Police and Victim
+
+### 👮 Police Dashboard
+- Add, update, and view case statuses
+- File and manage complaints
+- View unresolved cases and complaints
+- Visualize data with bar graphs (using `matplotlib`)
+
+### 🙋 Victim Dashboard
+- View personal case and complaint records
+
+### 🧩 Database Operations
+- Nested joins and aggregation queries for linked cases and complaints
+- MySQL trigger-based **audit trail** for tracking case status updates
+- Stored procedures for efficient complaint insertion
+
+---
+
+## 🛠️ Installation
 
 ### Prerequisites
-1. **Python 3.x**
-2. **MySQL Server**
-3. Required Python modules:
-   - `tkinter`
-   - `mysql-connector-python`
-   - `matplotlib`
+- **Python 3.x**
+- **MySQL Server**
+- Python packages:
+  - `tkinter`
+  - `mysql-connector-python`
+  - `matplotlib`
 
-### Steps
-1. Clone the repository:
+### Setup Steps
+
+1. **Clone the Repository**
+   ```bash
    git clone https://github.com/HannahAlex004/Criminal-Record-Information-System.git
    cd criminal_record_management_system
+   ```
 2. Install the required Python packages:
+   ```bash
    pip install mysql-connector-python matplotlib
-3. Configure the database:
+   ```
+4. Configure the database:
    Create a MySQL database named criminal_record_db.
    Update the database credentials in the db_config dictionary in the code:
+   ```bash
    db_config = {
     'host': 'localhost',
     'user': 'your_mysql_username',
     'password': 'your_mysql_password',
     'database': 'criminal_record_db'
   }
+  ```
   Import the database schema (e.g., schema.sql) to create the necessary tables:
+```bash
   mysql -u root -p criminal_record_db < schema.sql
-5. Run the application:
+````
+6. Run the application:
+   ```bash
   python codes.py
-
+```
 ## Database Design
 ### Tables
 Users: Stores user information and roles.
@@ -76,12 +87,18 @@ Bar charts of case statuses for better visualization of data.
 ## How to Contribute
 1. Fork the repository.
 2. Create a new branch for your feature/bug fix:
+```bash
   git checkout -b feature_name
+```
 3. Commit your changes:
+   ```bash
   git commit -m "Add your message here"
-4. Push to the branch:
+  ```
+5. Push to the branch:
+```bash
   git push origin feature_name
-5. Create a pull request.
+```
+6. Create a pull request.
 
 ## Future Enhancements
 Add encryption for sensitive data.
