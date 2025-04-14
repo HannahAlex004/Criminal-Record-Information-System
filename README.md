@@ -55,17 +55,16 @@ A **Criminal Record Management System** built using **Python (Tkinter)** for the
     'host': 'localhost',
     'user': 'your_mysql_username',
     'password': 'your_mysql_password',
-    'database': 'criminal_record_db'
-  }
-  ```
+    'database': 'criminal_record_db' }
+   ```
   Import the database schema (e.g., schema.sql) to create the necessary tables:
 ```bash
   mysql -u root -p criminal_record_db < schema.sql
-````
+  ```
 6. Run the application:
-   ```bash
+  ```bash
   python codes.py
-```
+  ```
 ## Database Design
 ### Tables
 Users: Stores user information and roles.
@@ -91,9 +90,9 @@ Bar charts of case statuses for better visualization of data.
   git checkout -b feature_name
 ```
 3. Commit your changes:
-   ```bash
+```bash
   git commit -m "Add your message here"
-  ```
+```
 5. Push to the branch:
 ```bash
   git push origin feature_name
